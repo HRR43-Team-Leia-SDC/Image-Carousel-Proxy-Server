@@ -11,7 +11,7 @@ app.use(express.static('./public'));
 
 app.get('/carousel/:id', (req, res) => {
   const id = req.params.id
-  axios.get(`http://localhost:5000/carousel/${id}`)
+  axios.get(`http://3.93.172.223:5000/carousel/${id}`)
     .then((response) => {
       res.status(200).json(response.data);
     });
